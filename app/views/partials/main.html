@@ -1,0 +1,23 @@
+<div ng-include="'partials/navbar'"></div>
+
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/ross.jpg" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+    Even though it took me 30 hours to do it because npm was all fucked up. And I ended up forking like 3 bad projects before i found this good one.
+  </p>
+  <p>Also ignore this styling it's just a default hello world. maybe I'll change it before tomorrow</p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+</div>
+
+<div class="row marketing">
+  <div ng-repeat="thing in awesomeThings">
+      <h4>{{thing.name}}</h4>
+      <p>{{thing.info}}</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>♥ from the Yeoman team</p>
+</div>
