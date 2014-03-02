@@ -1,23 +1,37 @@
 <div ng-include="'partials/navbar'"></div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/ross.jpg" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-    Even though it took me 30 hours to do it because npm was all fucked up. And I ended up forking like 3 bad projects before i found this good one.
-  </p>
-  <p>Also ignore this styling it's just a default hello world. maybe I'll change it before tomorrow</p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
-</div>
+<nav class="navbar navbar-default" role="navigation">
+    <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
 
-<div class="row marketing">
-  <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
-  </div>
-</div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
+                <li ng-class="{'active': tab === 'about'}"><a href="" ng-click="tab='about'">About</a></li>
+                <li ng-class="{'active': tab === 'crew'}"><a href="" ng-click="tab='crew'">The Crew</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<section class="body-content">
+    <div class="slide-panel">
+        <div class="left slide" ng-class="{'in': tab === 'about'}">
+             <h1>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</h1>
+            <h2>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</h2>
+            <h1>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+            </h1>
+        </div>
+        <div class="right slide" ng-class="{'in': tab === 'crew'}">
+            <img class="person-pic" src="images/ross.jpg">
+            <img class="person-pic" src="images/sam.png">
+        </div>
+    </div>
+</section>
 
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
-</div>
