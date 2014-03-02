@@ -3,5 +3,5 @@
 angular.module('tyskApp')
 
 .controller('MainCtrl', function ($scope) {
-	$scope.tab = 'crew';
+	$scope.tab = 'about';
 });
