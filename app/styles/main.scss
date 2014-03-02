@@ -1,7 +1,12 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 @import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
-
+* {
+    font-family: 'Lato', sans-serif;
+}
+p {
+    font-size: 1.25em;
+}
 .header {
     overflow: hidden;
 }
@@ -23,11 +28,20 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     border: 0;
     margin-bottom: 0;
 }
+.nav .active a {
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px white;
+}
+.nav a {
+    @include transition(background-color 0.3s);
+    &:hover {
+        background-color: #ECE8E8 !important;
+    }
+}
 .hero-pic {
     width: 100%;
 }
 .body-content {
-    padding: 1em;
+    padding: 0 1em;
     min-height: 720px;
 }
 .slide-panel {
@@ -55,6 +69,15 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     }
     &.in {
         opacity: 1;
+    }
+}
+.about {
+    padding: 0 1.25em;
+    section {
+        h1 {
+            margin-bottom: 0.5em;
+        }
+        margin-bottom: 3em;
     }
 }
 
