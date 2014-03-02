@@ -4,9 +4,6 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 * {
     font-family: 'Lato', sans-serif;
 }
-p {
-    font-size: 1.25em;
-}
 .header {
     overflow: hidden;
 }
@@ -41,6 +38,7 @@ p {
     width: 100%;
 }
 .body-content {
+    overflow: hidden;
     padding: 0 1em;
     min-height: 720px;
 }
@@ -48,10 +46,17 @@ p {
     width: 200%;
 
 }
+.person {
+    margin-bottom: 1em;
+    @extend .col-md-6;
+}
 .person-pic {
-    width: 415px;
-    height: 415px;
+    width: 270px;
+    height: 270px;
     border-radius: 20em;
+}
+.person-details {
+
 }
 .slide {
     float: left;
@@ -72,6 +77,12 @@ p {
     }
 }
 .about {
+    h1 {
+        border-bottom: 1px solid #efefef;
+    }
+    p {
+        font-size: 1.25em;
+    }
     padding: 0 1.25em;
     section {
         h1 {
