@@ -64,7 +64,7 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
     opacity: 0;
     @include transition(opacity 0.5s, margin-left 1s);
     &.right {
-
+        margin-top: 1em;
     }
     &.left {
         margin-left: -100%;
