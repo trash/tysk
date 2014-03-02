@@ -5,6 +5,19 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .header {
     overflow: hidden;
 }
+.company-name {
+    background-color: rgba(0, 0, 0, 0.48);
+    font-family: 'Della Respira', serif;
+    position: fixed;
+    z-index: 1;
+    text-align: right;
+    margin-top: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 0.25em;
+    font-size: 3em;
+}
 .navbar {
     border-radius: 0;
     border: 0;
