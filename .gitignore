@@ -3,6 +3,7 @@ public
 .tmp
 .sass-cache
 app/bower_components
+app/images/screencap2.png
 heroku
 /views
 dist
