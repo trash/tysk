@@ -49,14 +49,58 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .person {
     margin-bottom: 1em;
     @extend .col-md-6;
+    @extend .clearfix;
 }
 .person-pic {
-    width: 270px;
-    height: 270px;
-    border-radius: 20em;
+    width: 370px;
+    height: 370px;
+    //border-radius: 20em;
 }
 .person-details {
-
+    position: relative;
+    height: 88px;
+    width: 370px;
+    margin-top: -88px;
+    background-color: rgba(41, 41, 41, 0.84);
+}
+.name-tag {
+    text-align: center;
+    border: 1px solid black;
+    height: 100%;
+    * {
+        margin: 0;
+        padding: 0.35em;
+        color: white;
+    }
+}
+.person-title {
+    font-size: 1.25em;
+}
+.person-description {
+    &:before, &:after {
+        position: relative;
+        font-size: 5em;
+        height: 50px;
+        width: 50px;
+        font-family: georgia, sarif;
+    }
+    &:before {
+        content: "\201C";
+        float: left;
+        top: 0.25em;
+    }
+    &:after {
+        content: "\201D";
+        float: right;
+        bottom: 0.60em;
+        width: 30px;
+    }
+    p {
+        padding-left: 40px;
+        padding-right: 30px;
+        float: left;
+        font-size: 1.20em;
+    }
 }
 .slide {
     float: left;
@@ -89,6 +133,15 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
             margin-bottom: 0.5em;
         }
         margin-bottom: 3em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .person-pic {
+        position: absolute;
+    }
+    .person-details {
+        margin-top: 282px;
     }
 }
 
