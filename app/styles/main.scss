@@ -7,6 +7,25 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 .header {
     overflow: hidden;
 }
+.email {
+    font-size: 2em;
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    i {
+        color: #3376DC;
+        position: relative;
+        top: 0.2em;
+        @include transition(margin-right 0.20s linear);
+    }
+    &:hover i {
+        margin-right: 0.5em;
+    }
+    &:hover a {
+        color: #428bca;
+    }
+}
 footer {
     border-top: 1px solid #979797;
     text-align: center;
@@ -46,27 +65,21 @@ footer {
 }
 .body-content {
     overflow: hidden;
-    padding: 0 1em;
     min-height: 720px;
 }
 .slide-panel {
     width: 200%;
-
+}
+.person-pic {
+    width: 100%;
 }
 .person {
     margin-bottom: 1em;
     @extend .col-md-6;
     @extend .clearfix;
 }
-.person-pic {
-    width: 370px;
-    height: 370px;
-    //border-radius: 20em;
-}
 .person-details {
     position: relative;
-    height: 88px;
-    width: 370px;
     margin-top: -88px;
     background-color: rgba(41, 41, 41, 0.84);
 }
@@ -151,6 +164,19 @@ footer {
         margin-top: 282px;
     }
 }
-
+@media (min-width: 480px) {
+    .body-content {
+        padding: 0 1em;
+    }
+    .person-details {
+        height: 88px;
+        width: 370px;
+    }
+    .person-pic {
+        width: 370px !important;
+        height: 370px;
+        //border-radius: 20em;
+    }
+}
 
 
