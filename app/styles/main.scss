@@ -26,10 +26,23 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
         color: #428bca;
     }
 }
+
+.video-container-wrap {
+    @extend .row;
+    overflow: scroll;
+    height: 400px;
+}
+.video-container {
+    width: 300%;
+    .video-wrap {
+        float: left;
+        width: 16.67%;
+    }
+}
+
 footer {
     border-top: 1px solid #979797;
     text-align: center;
-    font-size: 1.25em;
     background-color: #EAEAEA;
     padding: 0.25em;
 }
@@ -62,6 +75,7 @@ footer {
 }
 .hero-pic {
     width: 100%;
+    margin-bottom: -20em;
 }
 .body-content {
     overflow: hidden;
