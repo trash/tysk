@@ -1,103 +1,103 @@
 <div ng-include="'partials/navbar'"></div>
 <h1 class="company-name">tysk</h1>
 <nav class="navbar navbar-default" role="navigation">
-    <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+	<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-            <ul class="nav navbar-nav">
-                <li ng-class="{'active': tab === 'about'}"><a href="" ng-click="tab='about'">About</a></li>
-                <li ng-class="{'active': tab === 'crew'}"><a href="" ng-click="tab='crew'">The Crew</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+			<ul class="nav navbar-nav">
+				<li ng-class="{'active': tab === 'about'}"><a href="" ng-click="tab='about'">About</a></li>
+				<li ng-class="{'active': tab === 'crew'}"><a href="" ng-click="tab='crew'">The Crew</a></li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div>
 </nav>
 <section class="body-content">
-    <div class="slide-panel">
-        <div class="left slide about" ng-class="{'in': tab === 'about'}">
-            <section>
-                <h1>What we do</h1>
-                <p>Accessible content that spreads knowledge. Practically.</p>
-            </section>
-            <section>
-                <h1>Our work</h1>
-                <div class="video-container-wrap">
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158602014&amp;color=3376dc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                    <div class="video-container">
-                        <div class="video-wrap">
-                            <div class="thumbnail">
-                                <iframe width="100%" height="360" src="//www.youtube.com/embed/7V0WmFTVnnQ" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <div class="thumbnail">
-                                <iframe width="100%" height="360" src="//www.youtube.com/embed/0akfShdgQpQ" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <div class="thumbnail">
-                                <iframe width="100%" height="360"  src="//www.youtube.com/embed/Io3oFTb6Ugk" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <div class="thumbnail">
-                                <iframe width="100%" height="360" src="//www.youtube.com/embed/-FNfrC3EX6c" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <div class="thumbnail">
-                                <iframe width="100%" height="360" src="//www.youtube.com/embed/Kckjc_T-pBg" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h1>Contact Us</h1>
-                <div class="email">
-                    <a href="mailto:tyskllc@gmail.com"><i class="glyphicon glyphicon-envelope"></i> tyskllc@gmail.com</a>
-                </div>
-            </section>
-        </div>
-        <div class="right slide" ng-class="{'in': tab === 'crew'}">
-            <div class="person">
-                <img class="person-pic" src="images/ross.jpg">
-                <div class="person-details">
-                    <div class="name-tag">
-                        <h3 class="person-name">Ross Davis</h3>
-                        <h3 class="person-title">The Talent</h3>
-                    </div>
-                   <!--  <div class="person-description">
-                        <p>
-                            People are pretty smart. And when it really matters, they can understand the things that influence their lives. The problem is that the important things don't tend to come with a handbook. That's where we fit.
-                        </p>
-                    </div> -->
-                </div>
-            </div>
-            <div class="person">
-                <img class="person-pic" src="images/sam.png">
-                <div class="person-details">
-                    <div class="name-tag">
-                        <h3 class="person-name">Sam Plasmati</h3>
-                        <h3 class="person-title">The Creator</h3>
-                    </div>
-                    <!-- <div class="person-description">
-                        <p>
-                            Ross may be the science guy, but I've always been more of a history buff. And it got me thinking... there are so many awesome stories and pieces of information in this world, just not enough storytellers. We want to be those storytellers – explaining the things you see, do, and hear about every day.
-                        </p>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="slide-panel">
+		<div class="left slide about" ng-class="{'in': tab === 'about'}">
+			<section>
+				<h1>What we do</h1>
+				<p>Accessible content that spreads knowledge. Practically.</p>
+			</section>
+			<section>
+				<h1>Our work</h1>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158602014&amp;color=3376dc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+				<div class="video-container-wrap">
+					<div class="video-container">
+						<div class="video-wrap">
+							<div class="thumbnail">
+								<iframe width="100%" height="360" src="//www.youtube.com/embed/7V0WmFTVnnQ" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<div class="thumbnail">
+								<iframe width="100%" height="360" src="//www.youtube.com/embed/0akfShdgQpQ" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<div class="thumbnail">
+								<iframe width="100%" height="360"  src="//www.youtube.com/embed/Io3oFTb6Ugk" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<div class="thumbnail">
+								<iframe width="100%" height="360" src="//www.youtube.com/embed/-FNfrC3EX6c" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<div class="thumbnail">
+								<iframe width="100%" height="360" src="//www.youtube.com/embed/Kckjc_T-pBg" frameborder="0" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1>Contact Us</h1>
+				<div class="email">
+					<a href="mailto:tyskllc@gmail.com"><i class="glyphicon glyphicon-envelope"></i> tyskllc@gmail.com</a>
+				</div>
+			</section>
+		</div>
+		<div class="right slide" ng-class="{'in': tab === 'crew'}">
+			<div class="person">
+				<img class="person-pic" src="images/ross.jpg">
+				<div class="person-details">
+					<div class="name-tag">
+						<h3 class="person-name">Ross Davis</h3>
+						<h3 class="person-title">The Talent</h3>
+					</div>
+				   <!--  <div class="person-description">
+						<p>
+							People are pretty smart. And when it really matters, they can understand the things that influence their lives. The problem is that the important things don't tend to come with a handbook. That's where we fit.
+						</p>
+					</div> -->
+				</div>
+			</div>
+			<div class="person">
+				<img class="person-pic" src="images/sam.png">
+				<div class="person-details">
+					<div class="name-tag">
+						<h3 class="person-name">Sam Plasmati</h3>
+						<h3 class="person-title">The Creator</h3>
+					</div>
+					<!-- <div class="person-description">
+						<p>
+							Ross may be the science guy, but I've always been more of a history buff. And it got me thinking... there are so many awesome stories and pieces of information in this world, just not enough storytellers. We want to be those storytellers – explaining the things you see, do, and hear about every day.
+						</p>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 <footer>Made with <i class="glyphicon glyphicon-heart"></i> by <a target="_blank" href="http://whats.gd/home">Stefan</a></footer>
 
