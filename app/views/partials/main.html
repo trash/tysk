@@ -1,69 +1,78 @@
 <div ng-include="'partials/navbar'"></div>
 <h1 class="company-name">tysk</h1>
 <nav class="navbar navbar-default" role="navigation">
-	<!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-		</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-6">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
 
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-			<ul class="nav navbar-nav">
-				<li ng-class="{'active': tab === 'about'}"><a href="" ng-click="tab='about'">About</a></li>
-				<li ng-class="{'active': tab === 'crew'}"><a href="" ng-click="tab='crew'">The Crew</a></li>
-			</ul>
-		</div><!-- /.navbar-collapse -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+					<ul class="nav navbar-nav">
+						<li ng-class="{'active': tab === 'about'}"><a href="" ng-click="tab='about'">About</a></li>
+						<li ng-class="{'active': tab === 'crew'}"><a href="" ng-click="tab='crew'">The Crew</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</div>
 	</div>
 </nav>
-<section class="body-content">
+<section class="body-content container">
 	<div class="slide-panel">
 		<div class="left slide about" ng-class="{'in': tab === 'about'}">
-			<section>
-				<h1>What we do</h1>
-				<p>Accessible content that spreads knowledge. Practically.</p>
+			<section class="row">
+				<div class="col-md-12">
+					<h1>What we do</h1>
+					<p>Accessible content that spreads knowledge. Practically.</p>
+				</div>
 			</section>
-			<section>
-				<h1>Our work</h1>
-				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158602014&amp;color=3376dc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-				<div class="video-container-wrap">
-					<div class="video-container">
-						<div class="video-wrap">
-							<div class="thumbnail">
-								<iframe width="100%" height="360" src="//www.youtube.com/embed/7V0WmFTVnnQ" frameborder="0" allowfullscreen></iframe>
+			<section class="row">
+				<div class="col-md-12">
+					<h1>Our work</h1>
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158602014&amp;color=3376dc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+					<div class="video-container-wrap">
+						<div class="video-container">
+							<div class="video-wrap">
+								<div class="thumbnail">
+									<iframe width="100%" height="360" src="//www.youtube.com/embed/7V0WmFTVnnQ" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
-						</div>
-						<div class="video-wrap">
-							<div class="thumbnail">
-								<iframe width="100%" height="360" src="//www.youtube.com/embed/0akfShdgQpQ" frameborder="0" allowfullscreen></iframe>
+							<div class="video-wrap">
+								<div class="thumbnail">
+									<iframe width="100%" height="360" src="//www.youtube.com/embed/0akfShdgQpQ" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
-						</div>
-						<div class="video-wrap">
-							<div class="thumbnail">
-								<iframe width="100%" height="360"  src="//www.youtube.com/embed/Io3oFTb6Ugk" frameborder="0" allowfullscreen></iframe>
+							<div class="video-wrap">
+								<div class="thumbnail">
+									<iframe width="100%" height="360"  src="//www.youtube.com/embed/Io3oFTb6Ugk" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
-						</div>
-						<div class="video-wrap">
-							<div class="thumbnail">
-								<iframe width="100%" height="360" src="//www.youtube.com/embed/-FNfrC3EX6c" frameborder="0" allowfullscreen></iframe>
+							<div class="video-wrap">
+								<div class="thumbnail">
+									<iframe width="100%" height="360" src="//www.youtube.com/embed/-FNfrC3EX6c" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
-						</div>
-						<div class="video-wrap">
-							<div class="thumbnail">
-								<iframe width="100%" height="360" src="//www.youtube.com/embed/Kckjc_T-pBg" frameborder="0" allowfullscreen></iframe>
+							<div class="video-wrap">
+								<div class="thumbnail">
+									<iframe width="100%" height="360" src="//www.youtube.com/embed/Kckjc_T-pBg" frameborder="0" allowfullscreen></iframe>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<h1>Contact Us</h1>
-				<div class="email">
-					<a href="mailto:tyskllc@gmail.com"><i class="glyphicon glyphicon-envelope"></i> tyskllc@gmail.com</a>
+			<section class="row">
+				<div class="col-md-12">
+					<h1>Contact Us</h1>
+					<div class="email">
+						<a href="mailto:tyskllc@gmail.com"><i class="glyphicon glyphicon-envelope"></i> tyskllc@gmail.com</a>
+					</div>
 				</div>
 			</section>
 		</div>
