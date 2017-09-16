@@ -1,0 +1,53 @@
+import * as React from 'react';
+import {connect} from 'react-redux';
+import * as classNames from 'classnames';
+
+import {store, StoreState} from '../redux/store';
+
+import {Tab} from '../models/common';
+
+import {AboutView} from './About';
+import {TeamView} from './Team';
+
+import {ConnectedNavbar} from '../components/Navbar';
+
+interface HomeViewProps {
+    tab: Tab;
+}
+
+export class HomeView extends React.Component<HomeViewProps, {}> {
+    render() {
+        const tabClasses = (tab: Tab): string => {
+            return classNames('slide', {
+                in: tab === this.props.tab,
+                'left about': tab === 'about',
+                'right': tab === 'team'
+            });
+        }
+        return (
+            <div className="row">
+                <ConnectedNavbar/>
+                <section className="body-content container col-md-12">
+                    <div className="slide-panel">
+                        <div
+                            className={tabClasses('about')}
+                        >
+                            <AboutView/>
+                        </div>
+                        <div
+                            className={tabClasses('team')}
+                        >
+                            <TeamView/>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        );
+    }
+}
+
+export const ConnectedHomeView = connect((state: StoreState) => {
+    return {
+        tab: state.tab
+    };
+})(HomeView);

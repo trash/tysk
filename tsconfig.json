@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "esnext",
+        "module": "commonjs",
+        "pretty": true,
+        "listFiles": true,
+        "jsx": "react"
+    },
+    "exclude": [
+        "app/bower_components",
+        "node_modules",
+        "app/src/vendor",
+        "lib",
+        "app/test"
+    ]
+}
