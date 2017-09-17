@@ -9,7 +9,7 @@ var app = express();
 require('./lib/config')(app);
 
 // Routing
-app.get('/', (req, res) => res.render('index'));
+app.get('/*', (req, res) => res.render('index'));
 
 var port = process.env.port || process.env.PORT || 9000;
 
