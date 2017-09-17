@@ -9,7 +9,7 @@ export class TeamView extends React.Component<{}, {}> {
                         <img src="images/sam.png"/>
                         <div className="name-tag">
                             <h3 className="person-name">Sam Plasmati</h3>
-                            <h3 className="person-title">Product</h3>
+                            <p className="person-title">Product</p>
                         </div>
                     </div>
                     <div className="person-details">
@@ -23,7 +23,7 @@ export class TeamView extends React.Component<{}, {}> {
                         <img src="images/alex.jpg"/>
                         <div className="name-tag">
                             <h3 className="person-name">Alex Sullivan</h3>
-                            <h3 className="person-title">Mobile & Backend Development</h3>
+                            <p className="person-title">Mobile & Backend Development</p>
                         </div>
                     </div>
                     <div className="person-details">
@@ -37,7 +37,7 @@ export class TeamView extends React.Component<{}, {}> {
                         <img src="images/stefan.jpg"/>
                         <div className="name-tag">
                             <h3 className="person-name">Stefan Valentin</h3>
-                            <h3 className="person-title">Product & Frontend Development</h3>
+                            <p className="person-title">Product & Frontend Development</p>
                         </div>
                     </div>
                     <div className="person-details">

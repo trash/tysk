@@ -13,7 +13,7 @@ export class AboutView extends React.Component<{}, {}> {
                     <div className="col-md-4 col-md-offset-1">
                         <h1>Contact Us</h1>
                         <div className="email">
-                            <a href="mailto:tyskconsulting@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tyskconsulting@gmail.com</a>
+                            <a href="mailto:tysktechnologies@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tysktechnologies@gmail.com</a>
                         </div>
                     </div>
                 </section>
@@ -32,6 +32,9 @@ export class AboutView extends React.Component<{}, {}> {
                             </a>
                             <a href="http://www.predictiveindex.com/">
                                 <img src="/images/logos/predictive-index.svg"/>
+                            </a>
+                            <a href="https://www.masterpoint.io/">
+                                <img src="/images/logos/masterpoint.png"/>
                             </a>
                             <a href="https://www.stream.me/">
                                 <img src="/images/logos/streamme.png"/>
