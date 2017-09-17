@@ -49,7 +49,7 @@ export class AboutView extends React.Component<{}, {}> {
                     <div className="col-md-12">
                         <h1>Contact Us</h1>
                         <div className="email">
-                            <a href="mailto:tyskllc@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tyskllc@gmail.com</a>
+                            <a href="mailto:tyskconsulting@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tyskconsulting@gmail.com</a>
                         </div>
                     </div>
                 </section>
