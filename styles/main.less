@@ -1,5 +1,5 @@
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
 }
 
 body {
@@ -52,10 +52,15 @@ a {
     }
 }
 .email {
-    font-size: 2em;
+    font-size: 24px;
+    overflow: hidden;
     a {
         color: black;
         text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        overflow: hidden;
     }
     i {
         color: #3376DC;
@@ -128,56 +133,7 @@ footer {
 .slide-panel {
     width: 200%;
 }
-.person-pic {
-    width: 100%;
-}
-.person {
-    margin-bottom: 1em;
-}
-.person-details {
-    position: relative;
-    margin-top: -88px;
-    background-color: rgba(41, 41, 41, 0.84);
-}
-.name-tag {
-    text-align: center;
-    border: 1px solid black;
-    height: 100%;
-    * {
-        margin: 0;
-        padding: 0.35em;
-        color: white;
-    }
-}
-.person-title {
-    font-size: 1.25em;
-}
-.person-description {
-    &:before, &:after {
-        position: relative;
-        font-size: 5em;
-        height: 50px;
-        width: 50px;
-        font-family: georgia, sarif;
-    }
-    &:before {
-        content: "\201C";
-        float: left;
-        top: 0.25em;
-    }
-    &:after {
-        content: "\201D";
-        float: right;
-        bottom: 0.60em;
-        width: 30px;
-    }
-    p {
-        padding-left: 40px;
-        padding-right: 30px;
-        float: left;
-        font-size: 1.20em;
-    }
-}
+
 .slide {
     float: left;
     width: 50%;
@@ -212,27 +168,34 @@ footer {
     }
 }
 
-@media (min-width: 1000px) {
-    .person-pic {
-        position: absolute;
-    }
-    .person-details {
-        margin-top: 282px;
-    }
-}
+
 @media (min-width: 480px) {
     .body-content {
         padding: 0 1em;
     }
-    .person-details {
-        height: 88px;
-        width: 370px;
-    }
-    .person-pic {
-        width: 370px !important;
-        height: 370px;
-        //border-radius: 20em;
-    }
 }
 
 
+.team-section {
+    display: flex;
+}
+
+.companies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+        flex: 0 1 90px;
+        height: 90px;
+        margin: 0 4px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .companies-container {
+        justify-content: flex-start;
+    }
+}
+
+@import "person";

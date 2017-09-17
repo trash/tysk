@@ -29,8 +29,8 @@ export class MainView extends React.Component<void, {}> {
                             />
                         </div>
 
-                        <Route exact path="/" component={ConnectedHomeView}/>
-                        <footer>Made with <i className="glyphicon glyphicon-heart"></i> by <a target="_blank" href="http://whats.gd/home">Stefan</a></footer>
+                        <Route path="/" component={ConnectedHomeView}/>
+                        <footer>Website by tysk technologies</footer>
                     </div>
                 </Router>
             </Provider>

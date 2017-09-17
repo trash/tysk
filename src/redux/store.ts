@@ -18,7 +18,7 @@ export interface StoreState {
 }
 
 const initialState: StoreState = {
-    tab: 'about'
+    tab: location.pathname.split('/')[1] as Tab || 'about'
 };
 
 function mainReducer(

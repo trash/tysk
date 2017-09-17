@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
+import {History} from 'history';
 
 import {Tab} from '../models/common';
 import {updateTab} from '../redux/actions';
@@ -7,10 +8,12 @@ import {store, StoreState} from '../redux/store';
 
 interface NavbarProps {
     tab: Tab;
+    history: History;
 }
 
 export class Navbar extends React.Component<NavbarProps, {}> {
     selectTab(tab: Tab): void {
+        this.props.history.push(`/${tab}`);
         store.dispatch(updateTab(tab));
     }
 

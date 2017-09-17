@@ -5,51 +5,40 @@ export class AboutView extends React.Component<{}, {}> {
         return (
             <div>
                 <section className="row">
-                    <div className="col-md-12">
-                        <h1>What we do</h1>
-                        <p>Accessible content that spreads knowledge. Practically.</p>
+                    <div className="col-md-6">
+                        <h1>We're a software consulting group with a focus on solutions.</h1>
+                        <p>With an expertise in cutting edge technologies forged across a wide array of startups, software companies, and higher education organizations,
+                         we know how to leverage software to solve problems for companies that couldn't be solved any other way.</p>
                     </div>
-                </section>
-                <section className="row">
-                    <div className="col-md-12">
-                        <h1>Our work</h1>
-                        <iframe width="100%" height="166" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/158602014&amp;color=3376dc&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-                        <div className="video-container-wrap">
-                            <div className="video-container">
-                                <div className="video-wrap">
-                                    <div className="thumbnail">
-                                        <iframe width="100%" height="360" src="//www.youtube.com/embed/7V0WmFTVnnQ" frameBorder="0" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                                <div className="video-wrap">
-                                    <div className="thumbnail">
-                                        <iframe width="100%" height="360" src="//www.youtube.com/embed/0akfShdgQpQ" frameBorder="0" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                                <div className="video-wrap">
-                                    <div className="thumbnail">
-                                        <iframe width="100%" height="360"  src="//www.youtube.com/embed/Io3oFTb6Ugk" frameBorder="0" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                                <div className="video-wrap">
-                                    <div className="thumbnail">
-                                        <iframe width="100%" height="360" src="//www.youtube.com/embed/-FNfrC3EX6c" frameBorder="0" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                                <div className="video-wrap">
-                                    <div className="thumbnail">
-                                        <iframe width="100%" height="360" src="//www.youtube.com/embed/Kckjc_T-pBg" frameBorder="0" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="col-md-4 col-md-offset-1">
+                        <h1>Contact Us</h1>
+                        <div className="email">
+                            <a href="mailto:tyskconsulting@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tyskconsulting@gmail.com</a>
                         </div>
                     </div>
                 </section>
                 <section className="row">
                     <div className="col-md-12">
-                        <h1>Contact Us</h1>
-                        <div className="email">
-                            <a href="mailto:tyskconsulting@gmail.com"><i className="glyphicon glyphicon-envelope"></i> tyskconsulting@gmail.com</a>
+                        <h1>Our Experience</h1>
+                        <div className="companies-container">
+                            <a href="https://hhi.harvard.edu/">
+                                <img src="/images/logos/harvard.png"/>
+                            </a>
+                            <a href="https://www.runkeeper.com/">
+                                <img src="/images/logos/runkeeper.png"/>
+                            </a>
+                            <a href="https://www.rev.com/">
+                                <img src="/images/logos/rev.png"/>
+                            </a>
+                            <a href="http://www.predictiveindex.com/">
+                                <img src="/images/logos/predictive-index.svg"/>
+                            </a>
+                            <a href="https://www.stream.me/">
+                                <img src="/images/logos/streamme.png"/>
+                            </a>
+                            <a href="https://www.rediker.com">
+                                <img src="/images/logos/rediker.jpg"/>
+                            </a>
                         </div>
                     </div>
                 </section>

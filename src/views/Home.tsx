@@ -1,5 +1,7 @@
 import * as React from 'react';
 import {connect} from 'react-redux';
+import {BrowserRouter, Route} from 'react-router';
+import {History} from 'history';
 import * as classNames from 'classnames';
 
 import {store, StoreState} from '../redux/store';
@@ -13,6 +15,7 @@ import {ConnectedNavbar} from '../components/Navbar';
 
 interface HomeViewProps {
     tab: Tab;
+    history: History;
 }
 
 export class HomeView extends React.Component<HomeViewProps, {}> {
@@ -26,7 +29,7 @@ export class HomeView extends React.Component<HomeViewProps, {}> {
         }
         return (
             <div className="row">
-                <ConnectedNavbar/>
+                <ConnectedNavbar {...this.props}/>
                 <section className="body-content container col-md-12">
                     <div className="slide-panel">
                         <div
