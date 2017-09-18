@@ -6,7 +6,7 @@ export class AboutView extends React.Component<{}, {}> {
             <div>
                 <section className="row">
                     <div className="col-md-6">
-                        <h1>We're a software consulting group with a focus on solutions.</h1>
+                        <h1>Dynamic business solutions for dynamic businesses.</h1>
                         <p>With an expertise in cutting edge technologies forged across a wide array of startups, software companies, and higher education organizations,
                          we know how to leverage software to solve problems for companies that couldn't be solved any other way.</p>
                     </div>
