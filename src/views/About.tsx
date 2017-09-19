@@ -3,7 +3,7 @@ import * as React from 'react';
 export class AboutView extends React.Component<{}, {}> {
     render() {
         return (
-            <div>
+            <div className="about">
                 <section className="row">
                     <div className="col-md-6">
                         <h1>Dynamic business solutions for dynamic businesses.</h1>

@@ -25,7 +25,7 @@ ul.nav.navbar-nav a {
     overflow: hidden;
     margin: 0 -15px;
     position: relative;
-    height: 80px;
+    height: 100px;
 
     &:before {
         content: 'tysk';
@@ -41,16 +41,18 @@ ul.nav.navbar-nav a {
         color: white;
         padding: 0.25em;
         font-size: 3em;
+        padding-right: 50px;
     }
-    // &:after {
-    //     content: 'consulting';
-    //     position: absolute;
-    //     right: 0;
-    //     top: 0;
-    //     bottom: 0;
-    //     margin: auto;
-    //     color: white;
-    // }
+    &:after {
+        content: 'technologies';
+        position: absolute;
+        right: 16px;
+        top: 56px;
+        bottom: 0;
+        margin: auto;
+        color: white;
+        z-index: 1;
+    }
 }
 
 @media (min-width: 1024px) {

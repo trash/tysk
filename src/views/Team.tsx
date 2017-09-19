@@ -3,7 +3,7 @@ import * as React from 'react';
 export class TeamView extends React.Component<{}, {}> {
     render() {
         return (
-            <div className="team-section">
+            <div className="team-section row">
                 <div className="person">
                     <div className="person-pic">
                         <img src="images/sam.png"/>

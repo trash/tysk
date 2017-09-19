@@ -29,20 +29,8 @@ export class HomeView extends React.Component<HomeViewProps, {}> {
         }
         return (
             <div className="row">
-                <ConnectedNavbar {...this.props}/>
                 <section className="body-content container col-md-12">
-                    <div className="slide-panel">
-                        <div
-                            className={tabClasses('about')}
-                        >
-                            <AboutView/>
-                        </div>
-                        <div
-                            className={tabClasses('team')}
-                        >
-                            <TeamView/>
-                        </div>
-                    </div>
+                    <AboutView/>
                 </section>
             </div>
         );
